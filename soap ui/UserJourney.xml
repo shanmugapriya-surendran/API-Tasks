@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="97fa7661-4a91-4719-aeed-f8d2827d023b" activeEnvironment="Default" name="UserJourney" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="3a85a6df-da81-41f5-9702-bf700e203513" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com</con:endpoint></con:endpoints><con:resource name="AddUser" path="/api/hotel/customer/" id="3c6c794f-9ae8-44c1-a7e9-e2b3aef16187"><con:settings/><con:parameters/><con:method name="AddEmail" id="eee6c177-1f62-49de-bacf-3bd046ee98a7" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dev="https://developer.marvel.com/">dev:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404 403</con:status><con:params/><con:element xmlns:dev="https://developer.marvel.com/">dev:Fault</con:element></con:representation><con:request name="Request 1" id="fba56857-9a19-4f7e-935e-8945457869bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#endpoint}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="GetUser" path="/api/hotel/customer/${#Project#email}" id="3c6c794f-9ae8-44c1-a7e9-e2b3aef16187"><con:settings/><con:parameters/><con:method name="GetEmail" id="eee6c177-1f62-49de-bacf-3bd046ee98a7" method="GET"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dev="https://developer.marvel.com/">dev:Response</con:element></con:representation><con:request name="Request 1" id="fba56857-9a19-4f7e-935e-8945457869bf" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#endpoint}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="DeleteUser" path="/api/hotel/customer/${#Project#email}" id="3c6c794f-9ae8-44c1-a7e9-e2b3aef16187"><con:settings/><con:parameters/><con:method name="DeleteEmail" id="eee6c177-1f62-49de-bacf-3bd046ee98a7" method="DELETE"><con:settings/><con:parameters/><con:request name="Request 1" id="fba56857-9a19-4f7e-935e-8945457869bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:testSuite id="6377a78d-83fc-47ee-8864-54eab9e3e7a6" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="4ba1c978-b280-4199-bfca-cb2ad8c1857a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="E2E Journey" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Set up script" id="8dc4bbf5-1d4c-4a21-8834-c2be4d1cdeef"><con:settings/><con:config><script>import net.sf.json.groovy.*
+
+try{
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+     def projectPath = groovyUtils.projectPath
+	def FolderName= groovyUtils.projectPath
+	def setTestSuiteData=FolderName+ File.separator +"api.properties";
+	testRunner.testCase.testSuite.project.setPropertyValue("email","")
+	testRunner.testCase.testSuite.project.setPropertyValue("title","")
+	testRunner.testCase.testSuite.project.setPropertyValue("password","")
+	testRunner.testCase.testSuite.project.setPropertyValue("firstName","")
+	testRunner.testCase.testSuite.project.setPropertyValue("lastName","")
+	testRunner.testCase.testSuite.project.setPropertyValue("PROPERTY_FILE_NAME",setTestSuiteData)
+	testRunner.testCase.setPropertyValue("TestCaseName", testRunner.testCase.name)
+	testRunner.testCase.setPropertyValue("status", "")	
+	testRunner.testCase.setPropertyValue("comments","")
+     
+	
+}
+catch(Exception e){
+	log.info("Setup Failed"+e)
+}
+
+
+def props = new Properties()
+new File(context.expand('${#TestSuite#PROPERTY_FILE_NAME}')).withInputStream { 
+  stream -> props.load(stream) 
+}
+props.each {
+		testRunner.testCase.testSuite.project.setPropertyValue(it.key,it.value)
+}
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="AddUser" id="f8c94eb6-da84-4001-9e26-1d8caa646ec5"><con:settings/><con:config service="https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com" methodName="AddEmail" resourcePath="/api/hotel/customer/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddUser" id="ca6a7b4e-0cad-4c88-8378-01c1b3190248" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#endpointUrl}</con:endpoint><con:request>{
+"email": "${#Project#email}",
+"password": "${#Project#password}",
+"firstName": "${#Project#firstName}",
+"lastName": "${#Project#lastName}",
+"title": "${#Project#title}"
+}
+</con:request><con:originalUri>https://developer.marvel.com/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aa64b72e-c7fd-49d4-8136-87b29d6fc698" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="apikey" value="${#Project#publicKey}"/>
+  <con:entry key="offset" value="1"/>
+  <con:entry key="limit" value=""/>
+  <con:entry key="hash" value="${#Project#hash}"/>
+  <con:entry key="ts" value="1"/>
+</con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Log File Generator" id="0475cbb3-73c5-4301-9792-f8c4532a19e1"><con:settings/><con:config><script>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+import groovy.json.JsonBuilder;
+import groovy.json.JsonSlurper;
+
+def StepName= "AddUser"
+
+def ts = testRunner.testCase.getTestStepByName(StepName)
+def request = new String(ts.testRequest.messageExchange.rawRequestData)
+updateLogFile("Request:"+StepName,request)
+
+if (ts.testRequest.response!=null){
+def  response = testRunner.testCase.testSteps[StepName].testRequest.response.contentAsString
+def json  = new JsonSlurper().parseText(response)
+def builder  = new JsonBuilder(json)
+updateLogFile("Response Testing :"+StepName,builder.toPrettyString())
+}
+else{
+	updateLogFile("Response :","No Response for the Request")
+}
+
+
+
+
+
+//================================================================//
+void updateLogFile(String StepName, String loginfo){
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+	def projectPath = groovyUtils.projectPath
+	date = new Date()
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy')
+	logFolderDate = dateFormat.format(date)
+	def report = projectPath +File.separator + "log"
+	def reportFolder = new File(report)
+	if(!reportFolder.exists()){
+		reportFolder.mkdir()
+	}
+	def folderLocation=projectPath +File.separator + "log"+ File.separator +  "logs_"+logFolderDate
+	def logFolder = new File(folderLocation)
+	if(!logFolder.exists()){
+		logFolder.mkdir()
+	}
+	def logFileName = testRunner.testCase.name
+	def logger = new File(folderLocation +File.separator +  "Request_and_Response_"+logFileName)
+	log.info(logger)
+	if(!logger.exists()){
+		logger.createNewFile();
+	}
+
+	def line = System.getProperty("line.separator")
+	logger.append("-----------------------------------------------"+line)
+	logger.append(StepName + line)
+	logger.append("-----------------------------------------------"+line)
+	logger.append(loginfo + line)
+}
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Validation Script Add Email" id="a31933dd-5726-433f-8ad0-ed372bab75b1"><con:settings/><con:config><script>import net.sf.json.groovy.*
+import java.io.*
+
+
+try{
+
+def flag = false 
+def responseMessageAdd = testRunner.testCase.testSteps["AddUser"].testRequest.response.contentAsString
+def addUsers = new JsonSlurper().parseText(responseMessageAdd)
+def emailFromProperty = testRunner.testCase.testSuite.project.getPropertyValue("email")
+
+
+
+//commented the below block of code due to the issue as '@' present in the email id is not present in the generated customer id
+//if(!emailFromProperty.contains(addUsers.body.customerId.toString())){
+//	testRunner.fail("Not correct customer id")
+//}
+
+
+if(addUsers.statusCode.toString().contains("200") &amp;&amp; addUsers.body.sessionId.toString().size() >0){ 
+	flag = true
+}
+else{
+	testRunner.fail("status code is incorrect")
+}
+
+
+if(flag)
+	testRunner.testCase.setPropertyValue("comments","E2E journey is successful")
+else	{
+	testRunner.testCase.setPropertyValue("comments","E2E journey Failed. Error msg :  "+addUsers)
+	testRunner.testCase.setPropertyValue("status","Fail")
+}
+testRunner.testCase.testSuite.project.setPropertyValue("email",addUsers.body.customerId)
+}
+
+catch(Exception e){
+	log.info "  EXCEPTION FOUND --- "+e
+	testRunner.testCase.setPropertyValue("status","Fail")
+	testRunner.testCase.setPropertyValue("comments","E2E journey Failed. Error msg : "+addUsers)
+	testRunner.gotoStepByName("Finish")
+	}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Set Status" id="84f6b9e2-2842-48a3-af48-e502f5fd5ed7"><con:settings/><con:config><script>import net.sf.json.groovy.*
+def stepname = "AddUser"
+
+try{
+def httpResponseHeaders = testRunner.testCase.testSteps[stepname].testRequest.response.responseHeaders["#status#"]
+def httpStatusCode = (httpResponseHeaders =~ "[1-5]\\d\\d")[0]
+	if(httpStatusCode=="200" || httpStatusCode=="201" || httpStatusCode=="204"|| httpStatusCode=="304"){
+		testRunner.testCase.setPropertyValue("status","Pass")
+
+	}else {
+		testRunner.testCase.setPropertyValue("status","Fail")
+	}
+}
+catch(Exception e)
+{
+	log.info "EXCEPTION FOUND ---- "+e
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="GetUser" id="e072a85b-510f-4ed5-a901-38ca0c4fa747"><con:settings/><con:config service="https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com" methodName="GetEmail" resourcePath="/api/hotel/customer/${#Project#email}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetUser" id="ca6a7b4e-0cad-4c88-8378-01c1b3190248" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#endpointUrl}</con:endpoint><con:request/><con:originalUri>https://developer.marvel.com/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aa64b72e-c7fd-49d4-8136-87b29d6fc698" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="apikey" value="${#Project#publicKey}"/>
+  <con:entry key="offset" value="1"/>
+  <con:entry key="limit" value=""/>
+  <con:entry key="hash" value="${#Project#hash}"/>
+  <con:entry key="ts" value="1"/>
+</con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Log File Generator - Get User" id="825f4336-6090-456b-ac6e-efce167737b6"><con:settings/><con:config><script>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+import groovy.json.JsonBuilder;
+import groovy.json.JsonSlurper;
+
+def StepName= "GetUser"
+
+def ts = testRunner.testCase.getTestStepByName(StepName)
+def request = new String(ts.testRequest.messageExchange.rawRequestData)
+updateLogFile("Request:"+StepName,request)
+
+if (ts.testRequest.response!=null){
+def  response = testRunner.testCase.testSteps[StepName].testRequest.response.contentAsString
+def json  = new JsonSlurper().parseText(response)
+def builder  = new JsonBuilder(json)
+updateLogFile("Response Testing :"+StepName,builder.toPrettyString())
+}
+else{
+	updateLogFile("Response :","No Response for the Request")
+}
+
+
+
+
+
+//================================================================//
+void updateLogFile(String StepName, String loginfo){
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+	def projectPath = groovyUtils.projectPath
+	date = new Date()
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy')
+	logFolderDate = dateFormat.format(date)
+	def report = projectPath +File.separator + "log"
+	def reportFolder = new File(report)
+	if(!reportFolder.exists()){
+		reportFolder.mkdir()
+	}
+	def folderLocation=projectPath +File.separator + "log"+ File.separator +  "logs_"+logFolderDate
+	def logFolder = new File(folderLocation)
+	if(!logFolder.exists()){
+		logFolder.mkdir()
+	}
+	def logFileName = testRunner.testCase.name
+	def logger = new File(folderLocation +File.separator +  "Request_and_Response_"+logFileName)
+	log.info(logger)
+	if(!logger.exists()){
+		logger.createNewFile();
+	}
+
+	def line = System.getProperty("line.separator")
+	logger.append("-----------------------------------------------"+line)
+	logger.append(StepName + line)
+	logger.append("-----------------------------------------------"+line)
+	logger.append(loginfo + line)
+}
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Set Status - Get User" id="3237f338-c255-4e3e-86a9-d282b9445d4b"><con:settings/><con:config><script>import net.sf.json.groovy.*
+def stepname = "GetUser"
+
+try{
+def httpResponseHeaders = testRunner.testCase.testSteps[stepname].testRequest.response.responseHeaders["#status#"]
+def httpStatusCode = (httpResponseHeaders =~ "[1-5]\\d\\d")[0]
+	if(httpStatusCode=="200" || httpStatusCode=="201" || httpStatusCode=="204"|| httpStatusCode=="304"){
+		testRunner.testCase.setPropertyValue("status","Pass")
+
+	}else {
+		testRunner.testCase.setPropertyValue("status","Fail")
+	}
+}
+catch(Exception e)
+{
+	log.info "EXCEPTION FOUND ---- "+e
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="DeleteUser" id="5f4ff96b-8422-4756-bcd6-365b1e8809c3"><con:settings/><con:config service="https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com" methodName="DeleteEmail" resourcePath="/api/hotel/customer/${#Project#email}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteUser" id="ca6a7b4e-0cad-4c88-8378-01c1b3190248" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#endpointUrl}</con:endpoint><con:request/><con:originalUri>https://developer.marvel.com/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aa64b72e-c7fd-49d4-8136-87b29d6fc698" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="apikey" value="${#Project#publicKey}"/>
+  <con:entry key="offset" value="1"/>
+  <con:entry key="limit" value=""/>
+  <con:entry key="hash" value="${#Project#hash}"/>
+  <con:entry key="ts" value="1"/>
+</con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Log File Generator - Delete User" id="0089efc6-b9c5-4683-8fd7-fface8d12a2d"><con:settings/><con:config><script>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+import groovy.json.JsonBuilder;
+import groovy.json.JsonSlurper;
+
+def StepName= "DeleteUser"
+
+def ts = testRunner.testCase.getTestStepByName(StepName)
+def request = new String(ts.testRequest.messageExchange.rawRequestData)
+updateLogFile("Request:"+StepName,request)
+
+if (ts.testRequest.response!=null){
+def  response = testRunner.testCase.testSteps[StepName].testRequest.response.contentAsString
+def json  = new JsonSlurper().parseText(response)
+def builder  = new JsonBuilder(json)
+updateLogFile("Response Testing :"+StepName,builder.toPrettyString())
+}
+else{
+	updateLogFile("Response :","No Response for the Request")
+}
+
+
+
+
+
+//================================================================//
+void updateLogFile(String StepName, String loginfo){
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+	def projectPath = groovyUtils.projectPath
+	date = new Date()
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy')
+	logFolderDate = dateFormat.format(date)
+	def report = projectPath +File.separator + "log"
+	def reportFolder = new File(report)
+	if(!reportFolder.exists()){
+		reportFolder.mkdir()
+	}
+	def folderLocation=projectPath +File.separator + "log"+ File.separator +  "logs_"+logFolderDate
+	def logFolder = new File(folderLocation)
+	if(!logFolder.exists()){
+		logFolder.mkdir()
+	}
+	def logFileName = testRunner.testCase.name
+	def logger = new File(folderLocation +File.separator +  "Request_and_Response_"+logFileName)
+	log.info(logger)
+	if(!logger.exists()){
+		logger.createNewFile();
+	}
+
+	def line = System.getProperty("line.separator")
+	logger.append("-----------------------------------------------"+line)
+	logger.append(StepName + line)
+	logger.append("-----------------------------------------------"+line)
+	logger.append(loginfo + line)
+}
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Set Status - Delete User" id="8c5d2aac-5a04-4926-b169-dfb2950d05c6"><con:settings/><con:config><script>import net.sf.json.groovy.*
+def stepname = "DeleteUser"
+
+try{
+def httpResponseHeaders = testRunner.testCase.testSteps[stepname].testRequest.response.responseHeaders["#status#"]
+def httpStatusCode = (httpResponseHeaders =~ "[1-5]\\d\\d")[0]
+	if(httpStatusCode=="200" || httpStatusCode=="201" || httpStatusCode=="204"|| httpStatusCode=="304"){
+		testRunner.testCase.setPropertyValue("status","Pass")
+
+	}else {
+		testRunner.testCase.setPropertyValue("status","Fail")
+	}
+}
+catch(Exception e)
+{
+	log.info "EXCEPTION FOUND ---- "+e
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Validation Script" id="20aad916-1e7a-427a-ad2b-5c07ef2e916b"><con:settings/><con:config><script><![CDATA[import net.sf.json.groovy.*
+import java.io.*
+
+
+try{
+def responseMessage = testRunner.testCase.testSteps["DeleteUser"].testRequest.response.contentAsString
+def deleteUsers = new JsonSlurper().parseText(responseMessage)
+def flag = false 
+def responseMessageAdd = testRunner.testCase.testSteps["AddUser"].testRequest.response.contentAsString
+def addUsers = new JsonSlurper().parseText(responseMessageAdd)
+def responseMessageGet = testRunner.testCase.testSteps["GetUser"].testRequest.response.contentAsString
+def getUsers = new JsonSlurper().parseText(responseMessageGet)
+def emailFromProperty = testRunner.testCase.testSuite.project.getPropertyValue("email")
+
+
+
+
+if(addUsers.statusCode.toString().contains("200") && addUsers.body.sessionId.toString().size() >0 && deleteUsers.deleted.toString().contains("true") && getUsers.customerId.toString().contains(emailFromProperty)){ 
+	flag = true
+}
+else{
+	testRunner.fail("status code is incorrect")
+}
+
+
+if(flag)
+	testRunner.testCase.setPropertyValue("comments","E2E journey is successful")
+else	{
+	testRunner.testCase.setPropertyValue("comments","E2E journey Failed. Error msg "+addUsers)
+	testRunner.testCase.setPropertyValue("status","Fail")
+}
+
+}
+
+catch(Exception e){
+	log.info "  EXCEPTION FOUND --- "+e
+	testRunner.testCase.setPropertyValue("status","Fail")
+	testRunner.gotoStepByName("Finish")
+	}
+]]></script></con:config></con:testStep><con:testStep type="groovy" name="Finish" id="88f0ba23-cf65-4cb7-ac85-6ee61d58e320"><con:settings/><con:config><script>log.info "Done"</script></con:config></con:testStep><con:setupScript>import java.text.SimpleDateFormat;
+	date = new Date()
+	SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss")
+	long diff = date.getTime() 
+     testRunner.testCase.setPropertyValue("StartDate", diff.toString())
+     testRunner.testCase.testSuite.project.setPropertyValue("StartDate", dateFormat.format(date).toString())
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy_hhmmss')
+	shortDate = dateFormat.format(date)
+	def FileName = "Log_"+testCase.name+"_"+shortDate+".log"
+	testCase.setPropertyValue("logFileName", FileName)
+	log.info FileName
+
+	testCase.setPropertyValue("c", "1")
+</con:setupScript><con:tearDownScript>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+
+date = new Date().getTime()
+def StartDate = testRunner.testCase.getPropertyValue("StartDate")
+def startDate = Long.parseLong(StartDate)
+
+def duration = date-startDate
+
+long secondsInMilli = 1000;
+long minutesInMilli = secondsInMilli * 60;
+long hoursInMilli = minutesInMilli * 60;
+long elapsedHours = duration / hoursInMilli;
+long elapsedMinutes = duration / minutesInMilli;
+	duration = duration % minutesInMilli
+long elapsedSeconds = duration / secondsInMilli;		
+
+
+String format = String.format("%%0%dd", 2); 
+String seconds1 = String.format(format, elapsedSeconds); 
+String minutes1 = String.format(format, elapsedMinutes);  
+String hours1 = String.format(format, elapsedHours);
+
+def Duration = hours1+":"+minutes1+":"+seconds1
+testRunner.testCase.setPropertyValue("Duration", Duration.toString())</con:tearDownScript><con:properties><con:property><con:name>status</con:name><con:value>Pass</con:value></con:property><con:property><con:name>reason</con:name><con:value>Request failed</con:value></con:property><con:property><con:name>StartDate</con:name><con:value>1614805996680</con:value></con:property><con:property><con:name>TestCaseName</con:name><con:value>E2E Journey</con:value></con:property><con:property><con:name>logFileName</con:name><con:value>Log_E2E Journey_03-03-2021_091316.log</con:value></con:property><con:property><con:name>c</con:name><con:value>1</con:value></con:property><con:property><con:name>Duration</con:name><con:value>00:00:01</con:value></con:property><con:property><con:name>comments</con:name><con:value>E2E journey is successful</con:value></con:property></con:properties></con:testCase><con:testCase id="16872a0e-1ded-4069-9147-9c66142f28d2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Add User" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Set up script" id="b9880346-20fb-4eeb-965e-07f670cc972d"><con:settings/><con:config><script>import net.sf.json.groovy.*
+
+try{
+	testRunner.testCase.setPropertyValue("TestCaseName", testRunner.testCase.name)
+	testRunner.testCase.setPropertyValue("status", "")	
+	testRunner.testCase.setPropertyValue("comments","")
+     
+	
+}
+catch(Exception e){
+	log.info("Setup Failed"+e)
+}
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="AddUser" id="98e70847-693b-4d17-87a4-dd47470b9365"><con:settings/><con:config service="https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com" methodName="AddEmail" resourcePath="/api/hotel/customer/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddUser" id="ca6a7b4e-0cad-4c88-8378-01c1b3190248" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#endpointUrl}</con:endpoint><con:request>{
+"email": "${#Project#email}",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allen",
+"title": "Mr"
+}
+</con:request><con:originalUri>https://developer.marvel.com/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aa64b72e-c7fd-49d4-8136-87b29d6fc698" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="apikey" value="${#Project#publicKey}"/>
+  <con:entry key="offset" value="1"/>
+  <con:entry key="limit" value=""/>
+  <con:entry key="hash" value="${#Project#hash}"/>
+  <con:entry key="ts" value="1"/>
+</con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Log File Generator" id="6234942d-0e73-4fb6-b347-fafb052e9f20"><con:settings/><con:config><script>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+import groovy.json.JsonBuilder;
+import groovy.json.JsonSlurper;
+
+def StepName= "AddUser"
+
+def ts = testRunner.testCase.getTestStepByName(StepName)
+def request = new String(ts.testRequest.messageExchange.rawRequestData)
+updateLogFile("Request:"+StepName,request)
+
+if (ts.testRequest.response!=null){
+def  response = testRunner.testCase.testSteps[StepName].testRequest.response.contentAsString
+def json  = new JsonSlurper().parseText(response)
+def builder  = new JsonBuilder(json)
+updateLogFile("Response Testing :"+StepName,builder.toPrettyString())
+}
+else{
+	updateLogFile("Response :","No Response for the Request")
+}
+
+
+
+
+
+//================================================================//
+void updateLogFile(String StepName, String loginfo){
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+	def projectPath = groovyUtils.projectPath
+	date = new Date()
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy')
+	logFolderDate = dateFormat.format(date)
+	def report = projectPath +File.separator + "log"
+	def reportFolder = new File(report)
+	if(!reportFolder.exists()){
+		reportFolder.mkdir()
+	}
+	def folderLocation=projectPath +File.separator + "log"+ File.separator +  "logs_"+logFolderDate
+	def logFolder = new File(folderLocation)
+	if(!logFolder.exists()){
+		logFolder.mkdir()
+	}
+	def logFileName = testRunner.testCase.name
+	def logger = new File(folderLocation +File.separator +  "Request_and_Response_"+logFileName)
+	log.info(logger)
+	if(!logger.exists()){
+		logger.createNewFile();
+	}
+
+	def line = System.getProperty("line.separator")
+	logger.append("-----------------------------------------------"+line)
+	logger.append(StepName + line)
+	logger.append("-----------------------------------------------"+line)
+	logger.append(loginfo + line)
+}
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Validation Script" id="e850cea6-e1ad-4d46-baaf-26bb6e797cac"><con:settings/><con:config><script>import net.sf.json.groovy.*
+import java.io.*
+
+
+try{
+def responseMessage = testRunner.testCase.testSteps["AddUser"].testRequest.response.contentAsString
+def addUsers = new JsonSlurper().parseText(responseMessage)
+def flag = false
+
+
+
+
+
+if(addUsers.statusCode.toString().contains("200") &amp;&amp; addUsers.body.sessionId.toString().size() >0){ 
+log.info addUsers.statusCode
+log.info addUsers.headers
+log.info addUsers.body.customerId
+log.info addUsers.body.sessionId
+log.info addUsers.body.success
+	flag = true
+}
+else{
+	testRunner.fail("Not correct status code")
+}
+
+
+if(flag)
+	testRunner.testCase.setPropertyValue("comments","status code, session id are generated")
+else	
+	testRunner.testCase.setPropertyValue("comments","Failed - Status code || Session id is not correct. Error msg "+addUsers)
+}
+
+catch(Exception e){
+	log.info "  EXCEPTION FOUND --- "+e
+	testRunner.testCase.setPropertyValue("status","Fail")
+	testRunner.gotoStepByName("Finish")
+	}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Set Status" id="469c01d4-d5e7-4d98-8cc6-420805dfefb4"><con:settings/><con:config><script>import net.sf.json.groovy.*
+def stepname = "AddUser"
+
+try{
+def httpResponseHeaders = testRunner.testCase.testSteps[stepname].testRequest.response.responseHeaders["#status#"]
+def httpStatusCode = (httpResponseHeaders =~ "[1-5]\\d\\d")[0]
+	if(httpStatusCode=="200" || httpStatusCode=="201" || httpStatusCode=="204"|| httpStatusCode=="304"){
+		testRunner.testCase.setPropertyValue("status","Pass")
+
+	}else {
+		testRunner.testCase.setPropertyValue("status","Fail")
+	}
+}
+catch(Exception e)
+{
+	log.info "EXCEPTION FOUND ---- "+e
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Finish" id="47934451-8eb3-46da-be42-f9cb8ac9dba0"><con:settings/><con:config><script>log.info "Done"</script></con:config></con:testStep><con:setupScript>import java.text.SimpleDateFormat;
+	date = new Date()
+	SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss")
+	long diff = date.getTime() 
+     testRunner.testCase.setPropertyValue("StartDate", diff.toString())
+     testRunner.testCase.testSuite.project.setPropertyValue("StartDate", dateFormat.format(date).toString())
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy_hhmmss')
+	shortDate = dateFormat.format(date)
+	def FileName = "Log_"+testCase.name+"_"+shortDate+".log"
+	testCase.setPropertyValue("logFileName", FileName)
+	log.info FileName
+
+	testCase.setPropertyValue("c", "1")
+</con:setupScript><con:tearDownScript>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+
+date = new Date().getTime()
+def StartDate = testRunner.testCase.getPropertyValue("StartDate")
+def startDate = Long.parseLong(StartDate)
+
+def duration = date-startDate
+
+long secondsInMilli = 1000;
+long minutesInMilli = secondsInMilli * 60;
+long hoursInMilli = minutesInMilli * 60;
+long elapsedHours = duration / hoursInMilli;
+long elapsedMinutes = duration / minutesInMilli;
+	duration = duration % minutesInMilli
+long elapsedSeconds = duration / secondsInMilli;		
+
+
+String format = String.format("%%0%dd", 2); 
+String seconds1 = String.format(format, elapsedSeconds); 
+String minutes1 = String.format(format, elapsedMinutes);  
+String hours1 = String.format(format, elapsedHours);
+
+def Duration = hours1+":"+minutes1+":"+seconds1
+testRunner.testCase.setPropertyValue("Duration", Duration.toString())</con:tearDownScript><con:properties><con:property><con:name>status</con:name><con:value>Pass</con:value></con:property><con:property><con:name>reason</con:name><con:value>Request failed</con:value></con:property><con:property><con:name>StartDate</con:name><con:value>1614805997799</con:value></con:property><con:property><con:name>TestCaseName</con:name><con:value>Add User</con:value></con:property><con:property><con:name>logFileName</con:name><con:value>Log_Add User_03-03-2021_091317.log</con:value></con:property><con:property><con:name>c</con:name><con:value>1</con:value></con:property><con:property><con:name>Duration</con:name><con:value>00:00:00</con:value></con:property><con:property><con:name>comments</con:name><con:value>status code, session id are generated</con:value></con:property></con:properties></con:testCase><con:testCase id="e12babcf-9919-4644-a0d5-7ff4091b54bb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get User" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Set up script" id="ed9d3118-31c5-49f4-b5c0-783fe563b340"><con:settings/><con:config><script>import net.sf.json.groovy.*
+
+try{
+	testRunner.testCase.setPropertyValue("TestCaseName", testRunner.testCase.name)
+	testRunner.testCase.setPropertyValue("status", "")	
+	testRunner.testCase.setPropertyValue("comments","")
+     
+	
+}
+catch(Exception e){
+	log.info("Setup Failed"+e)
+}
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="GetUser" id="95cfb04a-2e82-422d-b3b2-6ef3d8933779"><con:settings/><con:config service="https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com" methodName="GetEmail" resourcePath="/api/hotel/customer/${#Project#email}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetUser" id="ca6a7b4e-0cad-4c88-8378-01c1b3190248" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#endpointUrl}</con:endpoint><con:request/><con:originalUri>https://developer.marvel.com/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aa64b72e-c7fd-49d4-8136-87b29d6fc698" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="apikey" value="${#Project#publicKey}"/>
+  <con:entry key="offset" value="1"/>
+  <con:entry key="limit" value=""/>
+  <con:entry key="hash" value="${#Project#hash}"/>
+  <con:entry key="ts" value="1"/>
+</con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Log File Generator - Get User" id="9357b8e4-0697-45cb-8129-03556ef98233"><con:settings/><con:config><script>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+import groovy.json.JsonBuilder;
+import groovy.json.JsonSlurper;
+
+def StepName= "GetUser"
+
+def ts = testRunner.testCase.getTestStepByName(StepName)
+def request = new String(ts.testRequest.messageExchange.rawRequestData)
+updateLogFile("Request:"+StepName,request)
+
+if (ts.testRequest.response!=null){
+def  response = testRunner.testCase.testSteps[StepName].testRequest.response.contentAsString
+def json  = new JsonSlurper().parseText(response)
+def builder  = new JsonBuilder(json)
+updateLogFile("Response Testing :"+StepName,builder.toPrettyString())
+}
+else{
+	updateLogFile("Response :","No Response for the Request")
+}
+
+
+
+
+
+//================================================================//
+void updateLogFile(String StepName, String loginfo){
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+	def projectPath = groovyUtils.projectPath
+	date = new Date()
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy')
+	logFolderDate = dateFormat.format(date)
+	def report = projectPath +File.separator + "log"
+	def reportFolder = new File(report)
+	if(!reportFolder.exists()){
+		reportFolder.mkdir()
+	}
+	def folderLocation=projectPath +File.separator + "log"+ File.separator +  "logs_"+logFolderDate
+	def logFolder = new File(folderLocation)
+	if(!logFolder.exists()){
+		logFolder.mkdir()
+	}
+	def logFileName = testRunner.testCase.name
+	def logger = new File(folderLocation +File.separator +  "Request_and_Response_"+logFileName)
+	log.info(logger)
+	if(!logger.exists()){
+		logger.createNewFile();
+	}
+
+	def line = System.getProperty("line.separator")
+	logger.append("-----------------------------------------------"+line)
+	logger.append(StepName + line)
+	logger.append("-----------------------------------------------"+line)
+	logger.append(loginfo + line)
+}
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Validation Script Get User" id="41d06b3a-70f7-486e-a203-891393c1b65e"><con:settings/><con:config><script>import net.sf.json.groovy.*
+import java.io.*
+
+
+try{
+def responseMessage = testRunner.testCase.testSteps["GetUser"].testRequest.response.contentAsString
+def getUsers = new JsonSlurper().parseText(responseMessage)
+def flag = false
+def emailFromProperty = testRunner.testCase.testSuite.project.getPropertyValue("email")
+
+
+if(getUsers.customerId.toString().contains(emailFromProperty)){ 
+	log.info getUsers.customerId.toString()
+	flag = true
+}
+else{
+	testRunner.fail("Not correct status code")
+}
+
+
+if(flag)
+	testRunner.testCase.setPropertyValue("comments","Customer id is correct")
+else	
+	testRunner.testCase.setPropertyValue("comments","Failed")
+}
+
+catch(Exception e){
+	log.info "  EXCEPTION FOUND --- "+e
+	testRunner.testCase.setPropertyValue("status","Fail")
+	testRunner.gotoStepByName("Finish")
+	}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Set Status - Get User" id="5e52f199-0367-4dfc-9e09-f5da63fe169c"><con:settings/><con:config><script>import net.sf.json.groovy.*
+def stepname = "GetUser"
+
+try{
+	Thread.sleep(5000) //To delay the execution and same will reflect in report 
+def httpResponseHeaders = testRunner.testCase.testSteps[stepname].testRequest.response.responseHeaders["#status#"]
+def httpStatusCode = (httpResponseHeaders =~ "[1-5]\\d\\d")[0]
+	if(httpStatusCode=="200" || httpStatusCode=="201" || httpStatusCode=="204"|| httpStatusCode=="304"){
+		testRunner.testCase.setPropertyValue("status","Pass")
+
+	}else {
+		testRunner.testCase.setPropertyValue("status","Fail")
+	}
+}
+catch(Exception e)
+{
+	log.info "EXCEPTION FOUND ---- "+e
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Finish" id="f32900b0-5614-4ca6-8716-9eb1dfb5cd62"><con:settings/><con:config><script>log.info "Done"</script></con:config></con:testStep><con:setupScript>import java.text.SimpleDateFormat;
+	date = new Date()
+	SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss")
+	long diff = date.getTime() 
+     testRunner.testCase.setPropertyValue("StartDate", diff.toString())
+     testRunner.testCase.testSuite.project.setPropertyValue("StartDate", dateFormat.format(date).toString())
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy_hhmmss')
+	shortDate = dateFormat.format(date)
+	def FileName = "Log_"+testCase.name+"_"+shortDate+".log"
+	testCase.setPropertyValue("logFileName", FileName)
+	log.info FileName
+
+	testCase.setPropertyValue("c", "1")
+</con:setupScript><con:tearDownScript>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+
+date = new Date().getTime()
+def StartDate = testRunner.testCase.getPropertyValue("StartDate")
+def startDate = Long.parseLong(StartDate)
+
+def duration = date-startDate
+
+long secondsInMilli = 1000;
+long minutesInMilli = secondsInMilli * 60;
+long hoursInMilli = minutesInMilli * 60;
+long elapsedHours = duration / hoursInMilli;
+long elapsedMinutes = duration / minutesInMilli;
+	duration = duration % minutesInMilli
+long elapsedSeconds = duration / secondsInMilli;		
+
+
+String format = String.format("%%0%dd", 2); 
+String seconds1 = String.format(format, elapsedSeconds); 
+String minutes1 = String.format(format, elapsedMinutes);  
+String hours1 = String.format(format, elapsedHours);
+
+def Duration = hours1+":"+minutes1+":"+seconds1
+testRunner.testCase.setPropertyValue("Duration", Duration.toString())</con:tearDownScript><con:properties><con:property><con:name>status</con:name><con:value>Pass</con:value></con:property><con:property><con:name>reason</con:name><con:value>Request failed</con:value></con:property><con:property><con:name>StartDate</con:name><con:value>1614805998113</con:value></con:property><con:property><con:name>TestCaseName</con:name><con:value>Get User</con:value></con:property><con:property><con:name>logFileName</con:name><con:value>Log_Get User_03-03-2021_091318.log</con:value></con:property><con:property><con:name>c</con:name><con:value>1</con:value></con:property><con:property><con:name>Duration</con:name><con:value>00:00:05</con:value></con:property><con:property><con:name>comments</con:name><con:value>Customer id is correct</con:value></con:property></con:properties></con:testCase><con:testCase id="4f1e21b5-3582-4162-ad92-3b46433ec82f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Delete User" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Set up script" id="8b68f215-4aef-4e65-9fbf-0a5de12bc55a"><con:settings/><con:config><script>import net.sf.json.groovy.*
+
+try{
+	testRunner.testCase.setPropertyValue("TestCaseName", testRunner.testCase.name)
+	testRunner.testCase.setPropertyValue("status", "")	
+	testRunner.testCase.setPropertyValue("comments","")
+     
+	
+}
+catch(Exception e){
+	log.info("Setup Failed"+e)
+}
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="DeleteUser" id="2fd3fb80-7068-42c4-9186-773b6ce815a2"><con:settings/><con:config service="https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com" methodName="DeleteEmail" resourcePath="/api/hotel/customer/${#Project#email}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteUser" id="ca6a7b4e-0cad-4c88-8378-01c1b3190248" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#endpointUrl}</con:endpoint><con:request/><con:originalUri>https://developer.marvel.com/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aa64b72e-c7fd-49d4-8136-87b29d6fc698" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="apikey" value="${#Project#publicKey}"/>
+  <con:entry key="offset" value="1"/>
+  <con:entry key="limit" value=""/>
+  <con:entry key="hash" value="${#Project#hash}"/>
+  <con:entry key="ts" value="1"/>
+</con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Log File Generator - Delete User" id="f92d671e-e8bc-4d95-93a2-52333c3ce853"><con:settings/><con:config><script>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+import groovy.json.JsonBuilder;
+import groovy.json.JsonSlurper;
+
+def StepName= "DeleteUser"
+
+def ts = testRunner.testCase.getTestStepByName(StepName)
+def request = new String(ts.testRequest.messageExchange.rawRequestData)
+updateLogFile("Request:"+StepName,request)
+
+if (ts.testRequest.response!=null){
+def  response = testRunner.testCase.testSteps[StepName].testRequest.response.contentAsString
+def json  = new JsonSlurper().parseText(response)
+def builder  = new JsonBuilder(json)
+updateLogFile("Response Testing :"+StepName,builder.toPrettyString())
+}
+else{
+	updateLogFile("Response :","No Response for the Request")
+}
+
+
+
+
+
+//================================================================//
+void updateLogFile(String StepName, String loginfo){
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+	def projectPath = groovyUtils.projectPath
+	date = new Date()
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy')
+	logFolderDate = dateFormat.format(date)
+	def report = projectPath +File.separator + "log"
+	def reportFolder = new File(report)
+	if(!reportFolder.exists()){
+		reportFolder.mkdir()
+	}
+	def folderLocation=projectPath +File.separator + "log"+ File.separator +  "logs_"+logFolderDate
+	def logFolder = new File(folderLocation)
+	if(!logFolder.exists()){
+		logFolder.mkdir()
+	}
+	def logFileName = testRunner.testCase.name
+	def logger = new File(folderLocation +File.separator +  "Request_and_Response_"+logFileName)
+	log.info(logger)
+	if(!logger.exists()){
+		logger.createNewFile();
+	}
+
+	def line = System.getProperty("line.separator")
+	logger.append("-----------------------------------------------"+line)
+	logger.append(StepName + line)
+	logger.append("-----------------------------------------------"+line)
+	logger.append(loginfo + line)
+}
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Validation Script Delete User" id="351986d4-da36-47b1-a59d-c73f738009bc"><con:settings/><con:config><script>import net.sf.json.groovy.*
+import java.io.*
+
+
+try{
+def responseMessage = testRunner.testCase.testSteps["DeleteUser"].testRequest.response.contentAsString
+def deleteUsers = new JsonSlurper().parseText(responseMessage)
+def flag = false 
+
+log.info deleteUsers.deleted.toString()
+if(deleteUsers.deleted.toString().contains("true")){ 
+	log.info deleteUsers.deleted.toString()
+	flag = true
+}
+else{
+	testRunner.fail("Not correct status code")
+}
+
+
+if(flag)
+	testRunner.testCase.setPropertyValue("comments","User deleted successfully")
+else	
+	testRunner.testCase.setPropertyValue("comments","Failed")
+}
+
+catch(Exception e){
+	log.info "  EXCEPTION FOUND --- "+e
+	testRunner.testCase.setPropertyValue("status","Fail")
+	testRunner.gotoStepByName("Finish")
+	}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Set Status - Delete User" id="7ddaf68b-c1ad-42aa-970b-464c466ff1c1"><con:settings/><con:config><script>import net.sf.json.groovy.*
+def stepname = "DeleteUser"
+
+try{
+def httpResponseHeaders = testRunner.testCase.testSteps[stepname].testRequest.response.responseHeaders["#status#"]
+def httpStatusCode = (httpResponseHeaders =~ "[1-5]\\d\\d")[0]
+	if(httpStatusCode=="200" || httpStatusCode=="201" || httpStatusCode=="204"|| httpStatusCode=="304"){
+		testRunner.testCase.setPropertyValue("status","Pass")
+
+	}else {
+		testRunner.testCase.setPropertyValue("status","Fail")
+	}
+}
+catch(Exception e)
+{
+	log.info "EXCEPTION FOUND ---- "+e
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Finish" id="fa67b6c2-2c3e-484b-984e-effd90cfd403"><con:settings/><con:config><script>log.info "Done"</script></con:config></con:testStep><con:setupScript>import java.text.SimpleDateFormat;
+	date = new Date()
+	SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss")
+	long diff = date.getTime() 
+     testRunner.testCase.setPropertyValue("StartDate", diff.toString())
+     testRunner.testCase.testSuite.project.setPropertyValue("StartDate", dateFormat.format(date).toString())
+	dateFormat = new java.text.SimpleDateFormat('dd-MM-yyyy_hhmmss')
+	shortDate = dateFormat.format(date)
+	def FileName = "Log_"+testCase.name+"_"+shortDate+".log"
+	testCase.setPropertyValue("logFileName", FileName)
+	log.info FileName
+
+	testCase.setPropertyValue("c", "1")
+</con:setupScript><con:tearDownScript>import java.Util.*;
+import com.eviware.soapui.support.*;
+import java.util.Date;
+
+date = new Date().getTime()
+def StartDate = testRunner.testCase.getPropertyValue("StartDate")
+def startDate = Long.parseLong(StartDate)
+
+def duration = date-startDate
+
+long secondsInMilli = 1000;
+long minutesInMilli = secondsInMilli * 60;
+long hoursInMilli = minutesInMilli * 60;
+long elapsedHours = duration / hoursInMilli;
+long elapsedMinutes = duration / minutesInMilli;
+	duration = duration % minutesInMilli
+long elapsedSeconds = duration / secondsInMilli;		
+
+
+String format = String.format("%%0%dd", 2); 
+String seconds1 = String.format(format, elapsedSeconds); 
+String minutes1 = String.format(format, elapsedMinutes);  
+String hours1 = String.format(format, elapsedHours);
+
+def Duration = hours1+":"+minutes1+":"+seconds1
+testRunner.testCase.setPropertyValue("Duration", Duration.toString())</con:tearDownScript><con:properties><con:property><con:name>status</con:name><con:value>Pass</con:value></con:property><con:property><con:name>reason</con:name><con:value>Request failed</con:value></con:property><con:property><con:name>StartDate</con:name><con:value>1614806003671</con:value></con:property><con:property><con:name>TestCaseName</con:name><con:value>Delete User</con:value></con:property><con:property><con:name>logFileName</con:name><con:value>Log_Delete User_03-03-2021_091323.log</con:value></con:property><con:property><con:name>c</con:name><con:value>1</con:value></con:property><con:property><con:name>Duration</con:name><con:value>00:00:00</con:value></con:property><con:property><con:name>comments</con:name><con:value>User deleted successfully</con:value></con:property></con:properties></con:testCase><con:testCase id="c29aabc0-3f0d-4d81-ba5c-3e4511beabdf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Report" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Set up script" id="f7c185c1-6b81-4153-99aa-b5b7862b59d5"><con:settings/><con:config><script>import net.sf.json.groovy.*
+
+try{
+	log.info testRunner.testCase.name
+	testRunner.testCase.setPropertyValue("TestCaseName", testRunner.testCase.name)	
+	testRunner.testCase.setPropertyValue("status", "Pass")	
+	testRunner.testCase.setPropertyValue("comments","")
+	}	
+catch(Exception e){
+	log.info("Setup Failed"+e)
+}
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Report Script" id="17ead6e8-6e1d-46c3-9d7a-144c297cee2c"><con:settings/><con:config><script><![CDATA[import net.sf.json.groovy.*
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.IOException;
+import java.io.Writer;
+import java.text.SimpleDateFormat;
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectPath = groovyUtils.projectPath
+def FolderName= groovyUtils.projectPath
+def reportPath =FolderName+ File.separator 
+def StartTime=testRunner.testCase.testSuite.project.getPropertyValue("StartDate")
+def EndTime=testRunner.testCase.testSuite.project.getPropertyValue("EndDate")
+
+SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+
+Date date = new Date();
+def dateWithoutTime=dateFormat.format(date)
+log.info(dateWithoutTime)
+
+
+log.info StartTime
+
+log.info EndTime
+
+SimpleDateFormat format1 = new SimpleDateFormat("HH:mm:ss");
+def date1 = format1.parse(StartTime);
+def date2 = format1.parse(EndTime)
+def long duration = date2.getTime()-date1.getTime()
+
+long secondsInMilli = 1000;
+long minutesInMilli = secondsInMilli * 60;
+long hoursInMilli = minutesInMilli * 60;
+long elapsedHours = duration / hoursInMilli;
+long elapsedMinutes = duration / minutesInMilli;
+	duration = duration % minutesInMilli
+long elapsedSeconds = duration / secondsInMilli;		
+
+String format = String.format("%%0%dd", 2); 
+String seconds1 = String.format(format, elapsedSeconds); 
+String minutes1 = String.format(format, elapsedMinutes);  
+String hours1 = String.format(format, elapsedHours);
+
+def Duration = hours1+":"+minutes1+":"+seconds1
+
+try{
+FileWriter writer = new FileWriter(reportPath+"Execution_Report_Suite.html");
+writer.write("<!DOCTYPE html>\n<html>\n<body>");
+writer.write("<table border='1' width='25%' align='center'>");
+writer.write("<tr bgcolor='LIGHTCORAL' align='middle' ><td colspan=2><b>Execution Status</b></td></tr>")
+writer.write("<tr align='middle'><td><b>Start Time : </b></td><td>"+StartTime+"</td></tr>")
+writer.write("<tr align='middle'><td><b>End Time : </b></td><td>"+EndTime+"</td></tr>")
+writer.write("<tr align='middle'><td><b>Total Duration : </b></td><td>"+Duration+"</td></tr>")
+def total=0
+def pass=0
+testRunner.testCase.testSuite.getTestCaseList().each{
+total++
+def statusReport=it.getPropertyValue('status')
+if(statusReport=='Pass')
+pass++
+}
+
+writer.write("<tr align='middle'><td><b>Total Executed : </b></td><td>"+total+"</td></tr>")
+writer.write("<tr align='middle'><td><b>Total Passed : </b></td><td>"+pass+"</td></tr>")
+writer.write("<tr align='middle'><td><b>Total Failed : </b></td><td>"+(total-pass)+"</td></tr>")
+writer.write("</table><br><br>");
+
+// For Result Creation 
+
+writer.write("<table border='1' width='62%' align='center'>");
+writer.write("<tr bgcolor='LIGHTCORAL'><th width='5%'>S.No</th><th>Test Case Name</th><th>Status</th><th>Duration(HH:mm:ss)</th><th>Comments</th></tr>")
+def sno = 1;
+testRunner.testCase.testSuite.getTestCaseList().each{
+	def Time = it.getPropertyValue("Duration")
+	log.info it.getPropertyValue('TestCaseName')
+	def status=it.getPropertyValue('status')
+	def comments=it.getPropertyValue("comments")
+	if(comments =="")
+		comments = "NA"
+	if(status=="")
+		status = "Fail"
+	if(status=='Pass')
+   		backgroundColor='green';
+	else if(status=='Fail')
+		backgroundColor='red';
+	else
+		backgroundColor='yellow';
+	writer.write("<tr><td align='middle'>"+sno+"</td><td align='left'>"+it.getPropertyValue('TestCaseName')+"</td><td align='middle' bgcolor="+backgroundColor+">"+status+"</td><td align='middle'>"+Time+"</td><td align='middle'>"+comments+"</td></tr>")
+sno++
+}
+writer.write("</table>\n</body>\n</html>");
+writer.close();
+
+} catch (IOException ioe)
+{ ioe.printStackTrace(); }
+
+//for ( testSuite in testRunner.testCase.testSuite.project.getTestSuiteList() ) {
+//    for ( testCase in testRunner.testCase.testSuite.getTestCaseList() ) {
+//        for ( testStep in testCase.getTestStepList() ) {
+//            log.info "${testSuite.getName()} : ${testCase.getName()} : ${testStep.getName()} is a test step of type: ${testStep.getClass().toString().tokenize('.')[-1]}"
+//        }
+//    }
+//}
+]]></script></con:config></con:testStep><con:setupScript>import java.text.SimpleDateFormat;
+date = new Date()
+SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss")
+	long diff = date.getTime() 
+testRunner.testCase.setPropertyValue("EndDate", diff.toString())
+testRunner.testCase.testSuite.project.setPropertyValue("EndDate", dateFormat.format(date).toString())
+testRunner.testCase.setPropertyValue("Duration", "00:00:00")
+log.info diff</con:setupScript><con:tearDownScript/><con:properties><con:property><con:name>TestCaseName</con:name><con:value>Report</con:value></con:property><con:property><con:name>pagination</con:name><con:value>0</con:value></con:property><con:property><con:name>status</con:name><con:value>Pass</con:value></con:property><con:property><con:name>EndDate</con:name><con:value>1614806003748</con:value></con:property><con:property><con:name>Duration</con:name><con:value>00:00:00</con:value></con:property><con:property><con:name>comments</con:name><con:value/></con:property></con:properties></con:testCase><con:properties><con:property><con:name>email</con:name><con:value>priya@gmail.com</con:value></con:property><con:property><con:name>PROPERTY_FILE_NAME</con:name><con:value>C:\Users\sakth\Desktop\soap ui\api.properties</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>StartDate</con:name><con:value>21:13:23</con:value></con:property><con:property><con:name>endpointUrl</con:name><con:value>https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com</con:value></con:property><con:property><con:name>EndDate</con:name><con:value>21:13:23</con:value></con:property><con:property><con:name>email</con:name><con:value>priyaymail.com</con:value></con:property><con:property><con:name>PROPERTY_FILE_NAME</con:name><con:value>C:\Users\sakth\Desktop\soap ui\api.properties</con:value></con:property><con:property><con:name>lastName</con:name><con:value>Allenn</con:value></con:property><con:property><con:name>password</con:name><con:value>a2q4y4Qu</con:value></con:property><con:property><con:name>firstName</con:name><con:value>David</con:value></con:property><con:property><con:name>title</con:name><con:value>MR</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

@@ -1,0 +1,339 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-03T19:24:42.427Z",
+        "line": 17,
+        "name": "End to End",
+        "description": "",
+        "id": "a-description;end-to-end;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am a new hotel customer with \"priya@mail.net\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"priya@mail.net\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.RestEnd2End.addUser(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Set request body",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.setRequestBody()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2017000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Send Post HTTP request",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.postHttpRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Able to view added customer",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.viewAddedCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Able to delete added customer",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.deleteAddedCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Able to view valid HTTP response code",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.response()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-03T19:24:44.699Z",
+        "line": 18,
+        "name": "End to End",
+        "description": "",
+        "id": "a-description;end-to-end;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am a new hotel customer with \"priya1qwq@mail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"priya1qwq@mail.com\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.RestEnd2End.addUser(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Set request body",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.setRequestBody()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Please provide valid email id\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat stepdefinitions.RestEnd2End.postHttpRequest(RestEnd2End.java:71)\n\tat ✽.Send Post HTTP request(file:///Users/sakthi/Desktop/SoapUiAWS/src/test/resources/application/restApi.feature:9)\n",
+              "duration": 175000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Send Post HTTP request",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.postHttpRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Able to view added customer",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.viewAddedCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Able to delete added customer",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.deleteAddedCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Able to view valid HTTP response code",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.response()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-03T19:24:44.882Z",
+        "line": 21,
+        "name": "Add User",
+        "description": "",
+        "id": "a-description;add-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am a new hotel customer",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.newHotelCust()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Set request body",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.setRequestBody()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Send Post HTTP request",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.postHttpRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Able to view valid HTTP response code",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.response()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-03T19:24:45.047Z",
+        "line": 27,
+        "name": "Get User",
+        "description": "",
+        "id": "a-description;get-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I am a existing hotel customer",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.deleteUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "execute via restAssured for view user",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.executedViaRestAssuredViewUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Able to view valid HTTP response code",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.response()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-03T19:24:45.149Z",
+        "line": 32,
+        "name": "Delete User",
+        "description": "",
+        "id": "a-description;delete-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am a existing hotel customer",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.deleteUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 87000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "execute via restAssured for delete user",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.executedViaRestAssuredDeleteUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Able to view valid HTTP response code",
+            "match": {
+              "location": "stepdefinitions.RestEnd2End.response()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "A description",
+    "description": "",
+    "id": "a-description",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/application/restApi.feature",
+    "tags": []
+  }
+]

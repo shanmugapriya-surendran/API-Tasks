@@ -1,0 +1,65 @@
+-----------------------------------------------
+Request:AddUser
+-----------------------------------------------
+POST https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 114
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"email": "priya@ymail.com",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allenn",
+"title": "MR"
+}
+
+-----------------------------------------------
+Response Testing :AddUser
+-----------------------------------------------
+{
+    "body": {
+        "customerId": "priyaymail.com",
+        "sessionId": "SEANtqlJx0",
+        "success": true
+    },
+    "headers": {
+        "Access-Control-Allow-Origin": "*"
+    },
+    "statusCode": 200
+}
+-----------------------------------------------
+Request:GetUser
+-----------------------------------------------
+GET https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/priyaymail.com HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+-----------------------------------------------
+Response Testing :GetUser
+-----------------------------------------------
+{
+    "customerId": "priyaymail.com"
+}
+-----------------------------------------------
+Request:DeleteUser
+-----------------------------------------------
+DELETE https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/priyaymail.com HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 0
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+-----------------------------------------------
+Response Testing :DeleteUser
+-----------------------------------------------
+{
+    "deleted": true
+}

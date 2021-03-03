@@ -1,0 +1,17 @@
+-----------------------------------------------
+Request:DeleteUser
+-----------------------------------------------
+DELETE https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/priyaymail.com HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 0
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+-----------------------------------------------
+Response Testing :DeleteUser
+-----------------------------------------------
+{
+    "deleted": true
+}
