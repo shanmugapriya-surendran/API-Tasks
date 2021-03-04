@@ -1,0 +1,178 @@
+-----------------------------------------------
+Request:AddUser
+-----------------------------------------------
+POST https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 112
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"email": "priyaymail.com",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allen",
+"title": "Mr"
+}
+
+-----------------------------------------------
+Response Testing :AddUser
+-----------------------------------------------
+{
+    "body": {
+        "customerId": "priyaymail.com",
+        "sessionId": "e6dSkjnZMZ",
+        "success": true
+    },
+    "headers": {
+        "Access-Control-Allow-Origin": "*"
+    },
+    "statusCode": 200
+}
+-----------------------------------------------
+Request:AddUser
+-----------------------------------------------
+POST https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 98
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"email": "",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allen",
+"title": "Mr"
+}
+
+-----------------------------------------------
+Response Testing :AddUser
+-----------------------------------------------
+{
+    "errorMessage": "Missing mandatory data",
+    "errorType": "Error",
+    "stackTrace": [
+        "exports.handler (/var/task/index.js:14:21)"
+    ]
+}
+-----------------------------------------------
+Request:AddUser
+-----------------------------------------------
+POST https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 98
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"email": "",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allen",
+"title": "Mr"
+}
+
+-----------------------------------------------
+Response Testing :AddUser
+-----------------------------------------------
+{
+    "errorMessage": "Missing mandatory data",
+    "errorType": "Error",
+    "stackTrace": [
+        "exports.handler (/var/task/index.js:14:21)"
+    ]
+}
+-----------------------------------------------
+Request:AddUser
+-----------------------------------------------
+POST https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 98
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"email": "",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allen",
+"title": "Mr"
+}
+
+-----------------------------------------------
+Response Testing :AddUser
+-----------------------------------------------
+{
+    "errorMessage": "Missing mandatory data",
+    "errorType": "Error",
+    "stackTrace": [
+        "exports.handler (/var/task/index.js:14:21)"
+    ]
+}
+-----------------------------------------------
+Request:AddUser
+-----------------------------------------------
+POST https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 98
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"email": "",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allen",
+"title": "Mr"
+}
+
+-----------------------------------------------
+Response Testing :AddUser
+-----------------------------------------------
+{
+    "errorMessage": "Missing mandatory data",
+    "errorType": "Error",
+    "stackTrace": [
+        "exports.handler (/var/task/index.js:14:21)"
+    ]
+}
+-----------------------------------------------
+Request:AddUser
+-----------------------------------------------
+POST https://ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com/api/hotel/customer/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 98
+Host: ipw5pjxxsh.execute-api.eu-west-1.amazonaws.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"email": "",
+"password": "a2q4y4Qu",
+"firstName": "David",
+"lastName": "Allen",
+"title": "Mr"
+}
+
+-----------------------------------------------
+Response Testing :AddUser
+-----------------------------------------------
+{
+    "errorMessage": "Missing mandatory data",
+    "errorType": "Error",
+    "stackTrace": [
+        "exports.handler (/var/task/index.js:14:21)"
+    ]
+}
